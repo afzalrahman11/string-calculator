@@ -19,6 +19,9 @@ Tests should be written for the following:
 4. It should handle new lines between numbers instead of commas:
 ![String Calculator](images/new_line_string.png)
 
+5. It should support different delimiters:
+![String Calculator](images/different_delimiters_string.png)
+
 ## Setup
 
 ### Prerequisites
