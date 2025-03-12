@@ -25,6 +25,9 @@ Tests should be written for the following:
 6. It should throw an exception for negative numbers:
 ![String Calculator](images/negative_numbers_string.png)
 
+7. It should ignore numbers greater than 1000:
+![String Calculator](images/ignore_numbers_greater_than_1000.png)
+
 ## Setup
 
 ### Prerequisites
