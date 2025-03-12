@@ -22,6 +22,9 @@ Tests should be written for the following:
 5. It should support different delimiters:
 ![String Calculator](images/different_delimiters_string.png)
 
+6. It should throw an exception for negative numbers:
+![String Calculator](images/negative_numbers_string.png)
+
 ## Setup
 
 ### Prerequisites

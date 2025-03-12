@@ -1,13 +1,19 @@
 class StringCalculator
-  def self.add(input)
+  def self.add(input_string)
+    return 0 if input_string.empty?
 
-    if input.start_with?("//")
-      delimiter = input[2]
-      input = input[4..-1].gsub(delimiter, ",")
+    delimiter = ","
+    
+    if input_string.start_with?("//")
+      delimiter = input_string[2]
+      input_string = input_string[4..-1]
     end
 
-    input.gsub("\n", ",").split(",").inject(0) do |sum, number|
-      sum + number.to_i
-    end
+    number_array = input_string.gsub("\n", delimiter).split(delimiter).map(&:to_i)
+
+    negative_numbers = number_array.select { |number| number < 0 }
+    raise "negative numbers not allowed #{negative_numbers.join(",")}" if negative_numbers.any?
+
+    number_array.sum
   end
 end
