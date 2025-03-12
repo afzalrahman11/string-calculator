@@ -16,6 +16,9 @@ Tests should be written for the following:
 3. It should return the sum of numbers for a string of multiple numbers:
 ![String Calculator](images/multiple_numbers_string.png)
 
+4. It should handle new lines between numbers instead of commas:
+![String Calculator](images/new_line_string.png)
+
 ## Setup
 
 ### Prerequisites
