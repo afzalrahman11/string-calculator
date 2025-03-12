@@ -13,6 +13,9 @@ Tests should be written for the following:
 2. It should return the number for a single number:
 ![String Calculator](images/single_number_string.png)
 
+3. It should return the sum of numbers for a string of multiple numbers:
+![String Calculator](images/multiple_numbers_string.png)
+
 ## Setup
 
 ### Prerequisites
