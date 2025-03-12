@@ -10,6 +10,8 @@ Tests should be written for the following:
 1. It should return 0 for an empty string "".
 ![String Calculator](images/empty_string.png)
 
+2. It should return the number for a single number:
+![String Calculator](images/single_number_string.png)
 
 ## Setup
 
