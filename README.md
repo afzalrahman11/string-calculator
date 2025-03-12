@@ -28,6 +28,9 @@ Tests should be written for the following:
 7. It should ignore numbers greater than 1000:
 ![String Calculator](images/ignore_numbers_greater_than_1000.png)
 
+8. It should support delimiters of any length:
+![String Calculator](images/delimiters_of_any_length.png)
+
 ## Setup
 
 ### Prerequisites

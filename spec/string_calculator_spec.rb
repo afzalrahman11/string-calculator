@@ -37,5 +37,10 @@ RSpec.describe StringCalculator do
         expect(StringCalculator.add("900,9,1001,2000")).to eq(909)
       end
     end
+    context "given delimiters of any length" do
+      it "returns the sum of all numbers" do
+        expect(StringCalculator.add("//[***]\n1***2***3")).to eq(6)
+      end
+    end
   end
 end

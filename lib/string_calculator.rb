@@ -5,8 +5,14 @@ class StringCalculator
     delimiter = ","
     
     if input_string.start_with?("//")
-      delimiter = input_string[2]
-      input_string = input_string[4..-1]
+      if input_string[2] == "["
+        index = input_string.index("]")
+        delimiter = input_string[3..index-1]
+        input_string = input_string[index+2..-1]
+      else
+        delimiter = input_string[2]
+        input_string = input_string[4..-1]
+      end
     end
 
     number_array = input_string.gsub("\n", delimiter).split(delimiter).map(&:to_i).reject{ |number| number > 1000 }
