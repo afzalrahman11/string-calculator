@@ -29,7 +29,7 @@ RSpec.describe StringCalculator do
     end
     context "given negative numbers" do
       it "raises an exception" do
-        expect { StringCalculator.add("3,-2,-5") }.to raise_error(RuntimeError, "negative numbers not allowed -2,-5")
+        expect { StringCalculator.add("3,-2,-5") }.to raise_error(RuntimeError, "negative numbers not allowed: -2, -5")
       end
     end
     context "given numbers greater than 1000" do
